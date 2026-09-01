@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cyvelle.example/</loc></url>
+  <url><loc>https://cyvelle.example/services</loc></url>
+  <url><loc>https://cyvelle.example/the-governance-blueprint</loc></url>
+  <url><loc>https://cyvelle.example/pricing</loc></url>
+  <url><loc>https://cyvelle.example/intelligence</loc></url>
+  <url><loc>https://cyvelle.example/intelligence/insights</loc></url>
+  <url><loc>https://cyvelle.example/intelligence/regulatory-radar</loc></url>
+  <url><loc>https://cyvelle.example/about</loc></url>
+  <url><loc>https://cyvelle.example/contact</loc></url>
+  <url><loc>https://cyvelle.example/services/leadership</loc></url>
+  <url><loc>https://cyvelle.example/services/leadership/virtual-ciso</loc></url>
+  <url><loc>https://cyvelle.example/services/leadership/part-time-ciso</loc></url>
+  <url><loc>https://cyvelle.example/services/leadership/fractional-compliance-officer</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/soc-2</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/iso-27001</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/pci-dss</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/hipaa</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/hitrust</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/cmmc</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/nis2</loc></url>
+  <url><loc>https://cyvelle.example/services/compliance/audit-certification-coordination</loc></url>
+  <url><loc>https://cyvelle.example/services/risk</loc></url>
+  <url><loc>https://cyvelle.example/services/risk/third-party-risk-management</loc></url>
+  <url><loc>https://cyvelle.example/services/risk/incident-response-planning</loc></url>
+  <url><loc>https://cyvelle.example/services/risk/cybersecurity-maturity-assessment</loc></url>
+  <url><loc>https://cyvelle.example/services/risk/security-for-startups</loc></url>
+  <url><loc>https://cyvelle.example/services/risk/cloud-security-consulting</loc></url>
+  <url><loc>https://cyvelle.example/services/ai-governance</loc></url>
+  <url><loc>https://cyvelle.example/services/ai-governance/iso-42001</loc></url>
+  <url><loc>https://cyvelle.example/services/ai-governance/eu-ai-act</loc></url>
+  <url><loc>https://cyvelle.example/services/ai-governance/nist-ai-rmf</loc></url>
+</urlset>
