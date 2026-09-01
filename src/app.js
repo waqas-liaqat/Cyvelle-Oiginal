@@ -585,18 +585,24 @@ function shell(content) {
     </div>
     <main>${content}</main>
     <footer>
-      <div>
+      <div class="footer-brand">
         <a class="brand" href="/" data-link><img src="${visuals.logo}" alt="Cyvelle Consulting" /></a>
         <p>Founder-led governance, risk, compliance, cybersecurity, and AI oversight advisory.</p>
       </div>
-      <nav>
+      <nav aria-label="Footer navigation">
+        <span>Company</span>
         ${link("/services", "Services")}
         ${link("/pricing", "Pricing")}
         ${link("/intelligence", "Intelligence")}
         ${link("/about", "About")}
         ${link("/contact", "Contact")}
       </nav>
-      <p class="fine">Independent audit, certification, legal, testing, software, travel, remediation, and other third-party costs remain separate where applicable.</p>
+      <div class="footer-note">
+        <span>Start here</span>
+        <strong>The Governance Blueprint</strong>
+        <p class="fine">Independent audit, certification, legal, testing, software, travel, remediation, and other third-party costs remain separate where applicable.</p>
+        ${link("/the-governance-blueprint", "View Blueprint", "text-link")}
+      </div>
     </footer>
   `;
 }

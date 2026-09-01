@@ -784,18 +784,79 @@ textarea { resize: vertical; }
 .form-status { min-height: 24px; margin: 0; color: var(--blue); font-weight: 750; }
 
 footer {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 28px;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(160px, 0.55fr) minmax(320px, 0.9fr);
+  gap: clamp(28px, 5vw, 78px);
   align-items: start;
-  padding: 46px clamp(20px, 5vw, 76px);
+  padding: clamp(48px, 6vw, 74px) clamp(20px, 5vw, 76px);
   border-top: 1px solid var(--line);
-  background: white;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
 }
 
-footer p { max-width: 430px; color: var(--muted); }
-footer nav { display: grid; gap: 8px; }
-footer nav a { color: var(--blue); font-weight: 750; }
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--blue), var(--teal));
+}
+
+footer p { max-width: 470px; color: var(--muted); }
+
+footer nav,
+.footer-note {
+  display: grid;
+  gap: 10px;
+}
+
+footer nav span,
+.footer-note span {
+  color: var(--blue);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+footer nav a {
+  width: fit-content;
+  color: #10233f;
+  font-family: "Sora", sans-serif;
+  font-weight: 760;
+}
+
+footer nav a:hover,
+.footer-note .text-link:hover {
+  color: var(--blue);
+}
+
+.footer-brand .brand {
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  font-size: 1.02rem;
+}
+
+.footer-note {
+  padding: 24px;
+  border: 1px solid rgba(169, 201, 239, 0.72);
+  border-radius: 26px;
+  background: white;
+  box-shadow: 0 18px 42px rgba(0, 31, 79, 0.07);
+}
+
+.footer-note strong {
+  color: var(--ink);
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+}
+
+.footer-note .fine {
+  margin: 0;
+}
 
 @media (max-width: 1180px) {
   .site-header { grid-template-columns: auto 1fr auto; }
