@@ -993,7 +993,21 @@ function founderModule() {
 }
 
 function finalCta(context) {
-  return `<section class="final-cta"><p class="eyebrow">${context}</p><h2>Ready to make the next governance decision visible?</h2><p>Bring the pressure point, deadline, and current state. Cyvelle will help confirm the practical next step.</p>${cta()}</section>`;
+  return `
+    <section class="final-cta">
+      <div>
+        <p class="eyebrow">${context}</p>
+        <h2>Ready to make the next governance decision visible?</h2>
+        <p>Bring the pressure point, deadline, and current state. Cyvelle will help confirm the practical next step.</p>
+        ${cta()}
+      </div>
+      <aside class="final-cta-panel">
+        <span>${icon("CalendarCheck")}</span>
+        <h3>Use the first call to clarify scope, evidence, ownership, and the next decision.</h3>
+        <p>No hourly bank. No generic package. The work starts with the business trigger in front of you.</p>
+      </aside>
+    </section>
+  `;
 }
 
 function notFound() {

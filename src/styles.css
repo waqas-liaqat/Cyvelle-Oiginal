@@ -723,7 +723,11 @@ tr:last-child td { border-bottom: 0; }
 }
 
 .final-cta {
-  padding-block: clamp(58px, 8vw, 112px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.46fr);
+  gap: clamp(28px, 6vw, 86px);
+  align-items: center;
+  padding-block: clamp(52px, 6vw, 78px);
   color: white;
   background: linear-gradient(135deg, var(--navy), #07376f);
 }
@@ -731,6 +735,61 @@ tr:last-child td { border-bottom: 0; }
 .final-cta h2 { max-width: 780px; color: white; }
 .final-cta p:not(.eyebrow) { max-width: 680px; color: rgba(255, 255, 255, 0.82); }
 .final-cta .eyebrow { color: #9ec7ff; }
+
+.final-cta .btn {
+  margin-top: 18px;
+}
+
+.final-cta-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 22px 48px rgba(0, 12, 32, 0.22);
+}
+
+.final-cta-panel::after {
+  content: "";
+  position: absolute;
+  right: -52px;
+  bottom: -58px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.final-cta-panel span {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  color: white;
+  background: var(--blue);
+}
+
+.final-cta-panel svg {
+  width: 21px;
+  height: 21px;
+}
+
+.final-cta-panel h3 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: clamp(1.16rem, 1.7vw, 1.45rem);
+  line-height: 1.35;
+}
+
+.final-cta-panel p {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
 
 .breadcrumbs {
   display: flex;
@@ -904,6 +963,7 @@ footer nav a:hover,
   .pricing-grid,
   .timeline,
   .split-band,
+  .final-cta,
   .founder,
   .contact-layout,
   .image-story,
