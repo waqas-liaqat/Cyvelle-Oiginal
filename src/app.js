@@ -590,19 +590,23 @@ function shell(content) {
         <p>Founder-led governance, risk, compliance, cybersecurity, and AI oversight advisory.</p>
       </div>
       <nav aria-label="Footer navigation">
-        <span>Company</span>
+        <span>Explore</span>
         ${link("/services", "Services")}
         ${link("/pricing", "Pricing")}
         ${link("/intelligence", "Intelligence")}
         ${link("/about", "About")}
         ${link("/contact", "Contact")}
       </nav>
-      <div class="footer-note">
-        <span>Start here</span>
-        <strong>The Governance Blueprint</strong>
-        <p class="fine">Independent audit, certification, legal, testing, software, travel, remediation, and other third-party costs remain separate where applicable.</p>
-        ${link("/the-governance-blueprint", "View Blueprint", "text-link")}
+      <nav aria-label="Footer services">
+        <span>Practice Areas</span>
+        ${Object.values(categoryMeta).map((cat) => link(cat.path, cat.short)).join("")}
+      </nav>
+      <div class="footer-contact">
+        <span>Start Here</span>
+        ${link("/the-governance-blueprint", "The Governance Blueprint")}
+        ${cta("Book consultation")}
       </div>
+      <p class="footer-disclaimer">Independent audit, certification, legal, testing, software, travel, remediation, and other third-party costs remain separate where applicable.</p>
     </footer>
   `;
 }
